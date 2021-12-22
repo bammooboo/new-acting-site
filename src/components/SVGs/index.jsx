@@ -1,0 +1,10 @@
+export { default as Chevron } from './chevron';
+export { default as Close } from './close';
+export { default as Email } from './email';
+export { default as Facebook } from './facebook';
+export { default as Imdb } from './imdb';
+export { default as Instagram } from './instagram';
+export { default as LogoSmall } from './logo-small';
+export { default as NameSVG } from './name';
+export { default as Spotlight } from './spotlight';
+export { default as Twitter } from './twitter';
