@@ -81,4 +81,46 @@ const Section = styled.div`
   left: 0;
 `;
 
-export { Container, ImageWrap, ImgContain, Section, StyledP, Title };
+const Tag = styled.div`
+  display: flex;
+  flex-flow: row nowrap;
+  position: absolute;
+  top: 12px;
+  right: 0;
+  z-index: 2;
+`;
+
+const TagText = styled.label`
+  background-color: ${colors.yellow};
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px 16px 8px 8px;
+  text-align: right;
+  text-transform: uppercase;
+
+  @media (min-width: ${breakpoints.md}px) {
+    font-size: 16px;
+  }
+`;
+
+const Accent = styled.div`
+  background-color: ${colors.yellow};
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 100%);
+  height: inherit;
+  left: 1px;
+  position: relative;
+  width: 17px;
+`;
+
+export {
+  Accent,
+  Container,
+  ImageWrap,
+  ImgContain,
+  Section,
+  StyledP,
+  Tag,
+  TagText,
+  Title
+};

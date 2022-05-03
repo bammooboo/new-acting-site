@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, ImageWrap, ImgContain, Section, StyledP, Title } from './ui';
+import { Accent, Container, ImageWrap, ImgContain, Section, StyledP, Tag, TagText, Title } from './ui';
 
 const VideoGrid = ({ clicked, videos }) => {
 
@@ -18,6 +18,12 @@ const VideoGrid = ({ clicked, videos }) => {
               {video.thumbnail ?
                 <img src={video.thumbnail} alt={video.title} onClick={() => handleClick(video)} /> :
                 <StyledP>Video coming soon</StyledP>
+              }
+              {video.tag &&
+                <Tag>
+                  <Accent />
+                  <TagText>{video.tag}</TagText>
+                </Tag>
               }
             </ImgContain>
             <Title>{video.title}</Title>
